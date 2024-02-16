@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+*{
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.logoPoke {
+    height: 100px;
+}
+
+.active {
+    color: yellow;
+}
+
+.inactive,
+a {
+    color: #ececec
+}
+
+.texto {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    background-image: url(C:\Users\nicog\OneDrive\Escritorio\trabajos\reactrouter2\pokemon\src\assets\img\pokebola.png);
+    background-position: 50%;
+    background-size: 9%;
+    background-repeat: no-repeat;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: black;
+}
+
+.veiwPokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.veiwPokemon>select {
+    width: 20%;
+    background-color: white;
+    border: solid 1px #ececec;
+    text-align: center;
+}
+
+.veiwPokemon>button {
+    width: 120px;
+    height: 25px;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(32, 32, 60);
+}
+
+.veiwPokemon>button:hover {
+    background-color: red;
+
+}
+
+.home {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.home > img {
+  width: 30%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card>.contenido {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card>.contenido>.imagen {
+    height: 200px;
+    width: 200px;
+    border: solid 1px #ececec;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card>.contenido>.description>.lista {
+    list-style: none;
+    text-align: start;
+}
+
+.card>.contenido>.description>.lista>li {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.card>.contenido>.description>p {
+    font-size: 20px;
+}
+
+@media(max-width: 576px) {
+    .texto {
+        font-size: 20px;
+    }
+
+    .logoPoke {
+        height: 70px;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    .veiwPokemon>select {
+        width: 150px;
+    }
+
+    .veiwPokemon>button {
+        width: 120px;
+    }
+
+    .card>.contenido {
+        flex-direction: column;
+    }
+
+    .card>.contenido>.imagen {
+        height: 150px;
+        width: 150px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .card>.contenido>.description>.lista>li {
+        font-size: 15px;
+    }
+
+}
